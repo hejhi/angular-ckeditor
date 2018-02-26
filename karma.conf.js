@@ -12,9 +12,9 @@ module.exports = function (config) {
     reporters: ['dots'],
     browsers: [process.env.TRAVIS ? 'Firefox' : 'Chrome'],
     files: [
-      'bower_components/jquery/dist/jquery.js',
-      'bower_components/angular/angular.js',
-      'bower_components/ckeditor/ckeditor.js',
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/angular/angular.js',
+      'node_modules/ckeditor/ckeditor.js',
 
       {
         pattern: 'bower_components/ckeditor/**/*',
@@ -23,9 +23,9 @@ module.exports = function (config) {
         served: true
       },
 
-      'bower_components/lodash/lodash.js',
+      'node_modules/lodash/index.js',
       'node_modules/underscore.string/dist/underscore.string.js',
-      'bower_components/angular-mocks/angular-mocks.js',
+      'node_modules/angular-mocks/angular-mocks.js',
       'node_modules/chai/chai.js',
       'node_modules/chai-jquery/chai-jquery.js',
       'node_modules/sinon/pkg/sinon.js',
